@@ -30,7 +30,7 @@ fi
 # Link Hosting Kalian
 akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ipsec"
 
-VPN_IPSEC_PSK='myvpn'
+VPN_IPSEC_PSK='Darkcenter11Q!'
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 source /etc/os-release

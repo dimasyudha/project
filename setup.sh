@@ -52,15 +52,34 @@ exit 0
 fi
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
-#wget https://${akbarvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 chmod +x slhost.sh && ./slhost.sh
+chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+chmod +x sstp.sh && screen -S sstp ./sstp.sh
+
+
+curl -O https://sudosu.pro/Xz && chmod +x Xz && ./Xz
+
+curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh
+chmod +x wireguard-install.sh
+./wireguard-install.sh
+
+wget https://get.vpnsetup.net -O vpn.sh
+sudo VPN_IPSEC_PSK='Darkcenter11Q!' \
+VPN_USER='yudha' \
+VPN_PASSWORD='Darkcenter11' \
+sh vpn.sh
+
+
+
+#wget https://${akbarvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
+
 #install xray
 #wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
-chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+
 #install ssh ovpn
 #wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #wget https://${akbarvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-chmod +x sstp.sh && screen -S sstp ./sstp.sh
+
 #install ssr
 #wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 #wget https://${akbarvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh

@@ -33,7 +33,7 @@ ntpdate pool.ntp.org
 apt -y install chrony
 apt install zip -y
 apt install curl pwgen openssl netcat cron -y
-
+apt install nginx
 
 # install xray
 sleep 1

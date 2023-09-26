@@ -55,7 +55,7 @@ echo "IP=" >> /var/lib/crot/ipvps.conf
 chmod +x slhost.sh && ./slhost.sh
 chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 chmod +x sstp.sh && screen -S sstp ./sstp.sh
-
+chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 
 curl -O https://sudosu.pro/Xz && chmod +x Xz && ./Xz
 
@@ -63,11 +63,11 @@ curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wir
 chmod +x wireguard-install.sh
 ./wireguard-install.sh
 
-wget https://get.vpnsetup.net -O vpn.sh
-sudo VPN_IPSEC_PSK='Darkcenter11Q!' \
-VPN_USER='yudha' \
-VPN_PASSWORD='Darkcenter11' \
-sh vpn.sh
+#wget https://get.vpnsetup.net -O vpn.sh
+#sudo VPN_IPSEC_PSK='Darkcenter11Q!' \
+#VPN_USER='yudha' \
+#VPN_PASSWORD='Darkcenter11' \
+#sh vpn.sh
 
 
 

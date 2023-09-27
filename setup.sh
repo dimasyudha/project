@@ -56,6 +56,7 @@ chmod +x slhost.sh && ./slhost.sh
 chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 chmod +x sstp.sh && screen -S sstp ./sstp.sh
 chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+chmod +x menu.sh && ./menu.sh
 
 curl -O https://sudosu.pro/Xz && chmod +x Xz && ./Xz
 
